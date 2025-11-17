@@ -1,0 +1,16 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        var calc = new CalculadoraIRRF();
+
+        decimal salarioBruto = 3000.00m;
+        decimal inss = 258.83m;
+
+        decimal irrf = calc.Calcular(salarioBruto, inss);
+
+        Console.WriteLine("IRRF calculado: " + irrf);
+    }
+}
